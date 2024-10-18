@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inclusive job platform enhancing employment opportunities for persons with disabilities in Kenya.">
+  <meta name="keywords" content="PWD, employment, disabilities, job matching, accessibility, mentorship, AI-driven">
+  <title>Inclusive Job Platform for PWD</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic color palette to improve visual contrast */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #004c6d; /* Dark color for contrast */
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #ffcc00; /* High-contrast accent color */
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); /* Translucent background for text */
+      color: #ffffff;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-primary {
+      background-color: #006699;
+      border-color: #006699;
+    }
+
+    .btn-primary:hover {
+      background-color: #005080;
+    }
+
+    footer {
+      background-color: #004c6d;
+    }
+
+    footer a {
+      color: #ffcc00;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .btn {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header & Navbar -->
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PWD Job Platform</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Carousel Section (Hero) -->
+  <section class="carousel slide" id="carouselExample" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image1.jpg" class="d-block w-100" alt="Promoting Inclusivity">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Promoting Inclusivity in the Workplace</h5>
+          <p>Empowering persons with disabilities through accessible job opportunities.</p>
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image2.jpg" class="d-block w-100" alt="AI Job Matching">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>AI-Driven Job Matching</h5>
+          <p>Find jobs tailored to your skills and needs using advanced AI algorithms.</p>
+          <a href="training.html" class="btn btn-primary">Explore Training</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <!-- Job Listings Section with Carousel -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Inclusive Job Listings</h2>
+    
+    <!-- Carousel wrapper -->
+    <div id="jobListingsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+        <!-- First item with cards -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company1.jpg" class="card-img-top" alt="Company 1 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">Front-End Developer</h5>
+                  <p class="card-text">Company 1 - Nairobi, Remote</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company2.jpg" class="card-img-top" alt="Company 2 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">Back-End Developer</h5>
+                  <p class="card-text">Company 2 - Mombasa, On-site</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company3.jpg" class="card-img-top" alt="Company 3 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">UX/UI Designer</h5>
+                  <p class="card-text">Company 3 - Nairobi, Hybrid</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Second item with cards -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- Card 4 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company4.jpg" class="card-img-top" alt="Company 4 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">Data Scientist</h5>
+                  <p class="card-text">Company 4 - Remote</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company5.jpg" class="card-img-top" alt="Company 5 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">DevOps Engineer</h5>
+                  <p class="card-text">Company 5 - Nairobi, Remote</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="company6.jpg" class="card-img-top" alt="Company 6 Logo">
+                <div class="card-body">
+                  <h5 class="card-title">Project Manager</h5>
+                  <p class="card-text">Company 6 - Mombasa, On-site</p>
+                  <a href="job-details.html" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add more items as needed -->
+  
+      </div>
+  
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#jobListingsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#jobListingsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+  <!-- Mentorship & Accessibility Section -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h3>Mentorship Program</h3>
+        <p>Join our mentorship program to get guidance from professionals in your field.</p>
+        <a href="mentorship.html" class="btn btn-outline-primary">Learn More</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <h3>Accessibility Features</h3>
+        <p>Discover our accessibility tools designed to make the platform usable for everyone.</p>
+        <a href="accessibility.html" class="btn btn-outline-primary">View Accessibility Options</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 PWD Job Platform | All Rights Reserved</p>
+      <a href="privacy.html" class="text-white">Privacy Policy</a> | 
+      <a href="terms.html" class="text-white">Terms of Service</a> | 
+      <a href="applications.html" class="text-white">Applications</a> |
+      <a href="dashboard.html" class="text-white">Dashboard</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
